@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.distributed.SparkTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 365.566 sec <<< FAILURE! - in edu.coursera.distributed.SparkTest
+testIncreasingFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 76.568 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.268510315149981x. Sequential time = 40090 ms, parallel time = 31604 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testIncreasingFiftyThousand(SparkTest.java:272)
+
+testRandomTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 28.905 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.097568320409546x. Sequential time = 14579 ms, parallel time = 13283 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testRandomTwentyThousand(SparkTest.java:283)
+
+testUniformTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 31.196 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.3428941948279807x. Sequential time = 17604 ms, parallel time = 13109 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+
+testIncreasingTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 22.903 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.3441544885177452x. Sequential time = 12877 ms, parallel time = 9580 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
+
+testUniformFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 148.085 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 0.5660187586340613x. Sequential time = 46709 ms, parallel time = 82522 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testUniformFiftyThousand(SparkTest.java:250)
+
